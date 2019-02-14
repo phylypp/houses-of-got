@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Houses of GoT</string>
+    <string name="region">Region</string>
+    <string name="coat_of_arms">Coat of arms</string>
+    <string name="words">Words</string>
+    <string name="seats">Seats</string>
+    <string name="overlord">Overlord</string>
+    <string name="error">An error occurred</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="licenses">Licenses</string>
+    <string name="licenses_list">
+
+"The following libraries under Apache License Version 2.0 are used by this app. LICENSE: https://www.apache.org/licenses/LICENSE-2.0
+
+Retrofit by Square, Inc.
+
+RxAndroid by ReactiveX
+
+Koin by insert-koin.io"
+
+        </string>
+</resources>

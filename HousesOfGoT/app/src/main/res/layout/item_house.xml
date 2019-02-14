@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_home_black_16dp"
+        android:drawablePadding="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/tv_house_name"
+        android:layout_width="match_parent"
+        android:includeFontPadding="false"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="House of Mickey Mouse"/>

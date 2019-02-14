@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/house_details_head"
+                    android:id="@+id/tv_region_title"
+                    android:text="@string/region"
+                    tools:visibility="visible"/>
+
+            <TextView
+                    style="@style/house_details_body"
+                    android:id="@+id/tv_region_content"
+                    tools:visibility="visible"
+                    tools:text="Berlin"/>
+
+            <TextView
+                    style="@style/house_details_head"
+                    android:id="@+id/tv_coat_title"
+                    android:text="@string/coat_of_arms"/>
+
+            <TextView
+                    style="@style/house_details_body"
+                    android:id="@+id/tv_coat_content"/>
+
+
+            <TextView
+                    style="@style/house_details_head"
+                    android:id="@+id/tv_words_title"
+                    android:text="@string/words"/>
+
+            <TextView
+                    style="@style/house_details_body"
+                    android:id="@+id/tv_words_content"/>
+
+            <TextView
+                    style="@style/house_details_head"
+                    android:id="@+id/tv_seats_title"
+                    android:text="@string/seats"/>
+
+            <TextView
+                    style="@style/house_details_body"
+                    android:id="@+id/tv_seats_content"/>
+
+            <TextView
+                    style="@style/house_details_head"
+                    android:id="@+id/tv_overlord_title"
+                    android:text="@string/overlord"/>
+
+            <TextView
+                    style="@style/house_details_body"
+                    android:id="@+id/tv_overlord_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/loading_state"/>
+
+</FrameLayout>
