@@ -65,7 +65,6 @@ class ListActivity : AppCompatActivity(), KoinComponent {
         btn_retry.setOnClickListener { viewModel.retry() }
         viewModel.state.observe(this, Observer { state ->
             setStateView(
-                this,
                 viewModel.isListEmpty() && state == State.LOADING,
                 viewModel.isListEmpty() && state == State.ERROR,
                 state_view

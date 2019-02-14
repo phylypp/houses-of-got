@@ -21,17 +21,18 @@ enum class State {
  * @param showError if an error message should be displayed
  * @param stateView state view reference
  */
-fun setStateView(context: Context, showLoading: Boolean, showError: Boolean, stateView: View) {
-
-    stateView.pb_loading.visibility = if (showLoading) View.VISIBLE else View.GONE
+fun setStateView(showLoading: Boolean, showError: Boolean, stateView: View) {
+    stateView.visibility = if (showLoading || showError) View.VISIBLE else View.GONE
+    stateView.pb_loading.visibility = if (showLoading) View.VISIBLE else View.INVISIBLE
 
     if (showError) {
         stateView.btn_retry.visibility = View.VISIBLE
         stateView.tv_error.visibility = View.VISIBLE
-        stateView.tv_error.text = context.getString(if (isConnected(context)) R.string.error else R.string.no_internet)
+        stateView.tv_error.text =
+            stateView.context.getString(if (isConnected(stateView.context)) R.string.error else R.string.no_internet)
     } else {
-        stateView.btn_retry.visibility = View.GONE
-        stateView.tv_error.visibility = View.GONE
+        stateView.btn_retry.visibility = View.INVISIBLE
+        stateView.tv_error.visibility = View.INVISIBLE
     }
 }
 

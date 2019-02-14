@@ -16,7 +16,6 @@ class ListFooterViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun bind(status: State?) {
         setStateView(
-            itemView.context,
             status == State.LOADING,
             status == State.ERROR,
             itemView.state_view

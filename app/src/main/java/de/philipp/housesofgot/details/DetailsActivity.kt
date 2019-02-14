@@ -58,7 +58,6 @@ class DetailsActivity : AppCompatActivity(), KoinComponent {
         btn_retry.setOnClickListener { viewModel.retry() }
         viewModel.state.observe(this, Observer { state ->
             setStateView(
-                this,
                 state == State.LOADING,
                 state == State.ERROR,
                 state_view
