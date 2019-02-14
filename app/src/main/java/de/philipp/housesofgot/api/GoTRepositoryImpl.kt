@@ -1,11 +1,11 @@
 package de.philipp.housesofgot.api
 
+import okhttp3.ConnectionPool
 import okhttp3.OkHttpClient
-import okhttp3.Protocol
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.*
+import java.util.concurrent.TimeUnit
 
 /**
  * Repository implementation which loads house data using retrofit.
@@ -16,7 +16,7 @@ class GoTRepositoryImpl : GoTRepository {
         .client(
             OkHttpClient.Builder()
                 // workaround for https://github.com/square/okhttp/issues/3146
-                .protocols(Arrays.asList(Protocol.HTTP_1_1))
+                .connectionPool(ConnectionPool(0, 1, TimeUnit.NANOSECONDS))
                 .build()
         )
         .baseUrl("https://anapioficeandfire.com/api/")
