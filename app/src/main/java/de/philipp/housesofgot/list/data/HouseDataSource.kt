@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
 import de.philipp.housesofgot.State
 import de.philipp.housesofgot.api.GoTRepository
-import de.philipp.housesofgot.isConnected
 import de.philipp.housesofgot.model.House
 import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers

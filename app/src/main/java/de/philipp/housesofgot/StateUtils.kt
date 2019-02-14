@@ -16,7 +16,6 @@ enum class State {
 /**
  * Configures loading indicator, retry button and error message.
  *
- * @param context view context
  * @param showLoading if the loading indicator should be displayed
  * @param showError if an error message should be displayed
  * @param stateView state view reference
